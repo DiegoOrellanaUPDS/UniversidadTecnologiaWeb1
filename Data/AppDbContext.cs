@@ -1,9 +1,10 @@
-namespace Data
-{
-    using Microsoft.EntityFrameworkCore;
-    using Entidades;
-    using Departamentos.Medicina.Entidades;
+using Entidades;
+using Microsoft.EntityFrameworkCore;
+using Universidad.Entidades;
 
+
+namespace Universidad.Data
+{
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
@@ -12,6 +13,6 @@ namespace Data
         }
 
         public DbSet<Estudiante> Estudiantes { get; set; }
-        public DbSet<SolicitudLaboratorio> SolicitudesLaboratorio { get; set; }
+        public DbSet<ModalidadGrado> ModalidadesGrado { get; set; }
     }
 }
