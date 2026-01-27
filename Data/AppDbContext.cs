@@ -15,5 +15,6 @@ namespace Universidad.Data
         public DbSet<Estudiante> Estudiantes { get; set; }
         public DbSet<ModalidadGrado> ModalidadesGrado { get; set; }
         public DbSet<Docente> Docentes { get; set; }
+        public DbSet<Reclutador> Reclutadores {get;set;}
     }
 }
