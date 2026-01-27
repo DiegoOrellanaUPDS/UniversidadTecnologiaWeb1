@@ -1,7 +1,7 @@
 namespace Controllers
 {
     using Microsoft.AspNetCore.Mvc;
-    using Data;
+    using Universidad.Data;
     using Entidades;
     using Microsoft.EntityFrameworkCore;
     using System.Threading.Tasks;
