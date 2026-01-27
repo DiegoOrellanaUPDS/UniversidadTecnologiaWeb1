@@ -1,11 +1,11 @@
 namespace Controllers
 {
     using Microsoft.AspNetCore.Mvc;
-    using Data;
     using Entidades;
     using Microsoft.EntityFrameworkCore;
     using System.Threading.Tasks;
     using System.Collections.Generic;
+    using Universidad.Data;
 
     [ApiController]
     [Route("api/[controller]")]
