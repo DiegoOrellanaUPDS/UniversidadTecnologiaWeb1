@@ -1,0 +1,10 @@
+Modalidad de Grado
+
+Este módulo gestiona las diferentes modalidades de grado disponibles en la universidad,
+permitiendo registrar, listar, actualizar y desactivar modalidades como:
+- Tesis
+- Proyecto de Grado
+- Trabajo Dirigido
+
+Autor: Mauricio Aramayo
+Materia: Tecnología Web I
