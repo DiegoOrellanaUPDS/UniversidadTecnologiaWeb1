@@ -5,10 +5,15 @@ namespace Entidades
     public class Reclutador
     {
         [Key]
-        public int Id{get;set;}
-        public string Codigo {get;set;}=string.Empty;
-        public string Telefono {get;set;}=string.Empty;
-        public int IdPersona {get;set;}
-    }
+        public int Id { get; set; }
 
+        public string CodigoReclutador { get; set; }
+
+        public string Telefono { get; set; }
+
+ 
+        public string CodigoPersona { get; set; }
+
+        
+    }
 }
