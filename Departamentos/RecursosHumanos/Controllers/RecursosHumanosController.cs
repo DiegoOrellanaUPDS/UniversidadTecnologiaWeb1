@@ -7,20 +7,20 @@ namespace Universidad.Departamentos.RecursosHumanos.Controllers
     [Route("api/recursos-humanos")]
     public class RecursosHumanosController : ControllerBase
     {
-        [HttpGet("empleados")]
-        public IActionResult GetEmpleados()
+        [HttpPost]
+        public IActionResult CrearEmpleado([FromBody] EmpleadoRRHH empleado)
         {
-            var empleados = new List<Empleado>
+            if (empleado == null)
             {
-                new Empleado
-                {
-                    Id = 1,
-                    Nombre = "Juan Pérez",
-                    Cargo = "Analista de RRHH"
-                }
-            };
+                return BadRequest("El objeto empleado no puede ser nulo");
+            }
 
-            return Ok(empleados);
+            return Created("", new
+            {
+                mensaje = "Empleado de Recursos Humanos creado correctamente",
+                data = empleado
+            });
         }
     }
 }
+
