@@ -1,6 +1,7 @@
 using Entidades;
 using Microsoft.EntityFrameworkCore;
 using Universidad.Entidades;
+using UniversidadTecnologiaWeb1.Entidades;
 
 
 namespace Universidad.Data
@@ -16,5 +17,6 @@ namespace Universidad.Data
         public DbSet<ModalidadGrado> ModalidadesGrado { get; set; }
         public DbSet<Docente> Docentes { get; set; }
         public DbSet<Reclutador> Reclutadores {get;set;}
+        public DbSet<Proyecto> Proyectos {get;set;}
     }
 }
