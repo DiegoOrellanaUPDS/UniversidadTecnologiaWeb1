@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Data;
+using Universidad.Data;
 using Departamentos.Medicina.Entidades;
 
 namespace Departamentos.Medicina.Controllers
