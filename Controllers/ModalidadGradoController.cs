@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Universidad.Entidades;
-using Data;
+using Universidad.Data;
 
 namespace Universidad.Controllers
 {
